@@ -11,6 +11,7 @@ G = 4*np.pi**2                  # gravitational constant - 4pi when distance is 
 t = Time.now()                  # gets current time - required for astropy to get the locations of all planets at that time
 noutputs = 1500                 # number of outputs
 h = 0.01                        # integration timestep
+totaltime = noutputs*h          # total time of simulation in years
 
 # names of bodies for astropy to search
 bodies = ['sun', 'mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune']
